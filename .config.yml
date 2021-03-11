@@ -6,8 +6,12 @@ jobs:
    steps:
       - run:
           command: |
-           echo "Done" 
-           echo "Connect" 
+           git config --global user.name "MumetNgoding"
+           git config --global user.email "nugroho31.com@gmail.com"
+           git clone https://github.com/MumetNgoding/BrynKernel-AOSP Q
+           cd Q
+           chmod a+x gettools.sh
+           ./gettools.sh
 workflows:
   version: 2.1
   cooking:

@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: bryanhafidz/bryan-docker:0x02
+   steps:
+      - run:
+          command: |
+           echo "Done" 
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile

@@ -13,7 +13,7 @@ jobs:
            chmod a+x gettools.sh
            ./gettools.sh
 workflows:
-  version: 2.1
+  version: 2.1 
   cooking:
     jobs:
       - compile
